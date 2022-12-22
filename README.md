@@ -1,24 +1,12 @@
 # README
+Ahoy o/
+This application is a basic application for me to test out how to create custom generators. More information on how rails generators operate can be found on the `Rails generator` obsidian page
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Installation
+  Basic rails app installation. Clone the repo and run a good ol bundle install. No DB or anything
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Stimulus generator
+First generator that i created following this [honey badger article](https://www.honeybadger.io/blog/build-a-rails-generator/)
+```
+rails g stimulus toggle --actions toggle hide
+```
