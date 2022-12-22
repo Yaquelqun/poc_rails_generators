@@ -16,4 +16,13 @@ class StimulusGeneratorTest < Rails::Generators::TestCase
     run_generator ["Thing"]
     assert_file "app/javascript/controllers/thing_controller.js"
   end
+
+  test "generator should populate controller with default methods" do
+    run_generator ['Thing']
+    assert_file "app/javascript/controllers/thing_controller.js" do |content|
+      assert_match /Controller/, content
+      assert_match /connect()/, content
+      assert_match /@hotwired/, content
+    end
+  end
 end
